@@ -23,7 +23,7 @@ app.use("/api/passenger", passengerRoutes);
 /* MongoDB connection */
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb://localhost:27017/cab")
+    const conn = await mongoose.connect("mongodb+srv://root:12345@cluster1.1txjjxf.mongodb.net/cabconnect")
     console.log(`MongoDB Connected: ${conn.connection.host}`)
   } catch (error) {
     console.log(error)
